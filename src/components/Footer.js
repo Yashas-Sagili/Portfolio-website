@@ -18,7 +18,7 @@ export const Footer = () => {
                         <a href="https://github.com/Yashas-Sagili/"><img src={navIcon2} alt="GitHub account link" /></a>
                         <a href="https://www.instagram.com/yashas_s_994?igsh=eGk2eWw2aXpxcHhz"><img src={navIcon3} alt="Instagram account link" /></a>
                         </div>
-                        <p>CopyRight 2024. All Rights Reserved</p>
+                        <p>{'\u00a9'} 2024, Yashas Sagili. All Rights Reserved</p>
                     </Col>
                 </Row>
             </Container>
