@@ -14,21 +14,25 @@ export const Projects = () => {
             title: "QNexus",
             description: "QNexus is a gamified educational platform designed to blend fun and learning into a seamless experience.",
             imgUrl: projImg1,
+            //githubUrl: "https://github.com/Yashas-Sagili/QNexus",
         },
         {
             title: "Heart Failure Predictor",
             description: "An ML model to predict the percentage chance of failure of a patient's heart with certain given readings.",
             imgUrl: projImg2,
+            //githubUrl: "https://github.com/Yashas-Sagili/",
         },
         {
             title: "Mobile Shopee",
             description: "A one-stop shop solution for all purchases related to mobile phones.",
             imgUrl: projImg3,
+            //githubUrl: "https://github.com/Yashas-Sagili/",
         },
         {
             title: "Portfolio Website",
             description: "A single website that showcases everything required to assess my skills.",
             imgUrl: projImg4,
+            //githubUrl: "https://github.com/Yashas-Sagili/Portfolio-website",
         },
     ];
 
@@ -47,12 +51,12 @@ export const Projects = () => {
                                         <Nav.Item>
                                             <Nav.Link eventKey="first">Tab 1</Nav.Link>
                                         </Nav.Item>
-                                        <Nav.Item>
+                                        {/*<Nav.Item>
                                             <Nav.Link eventKey="second">Tab 2</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
                                             <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                                        </Nav.Item>
+                                        </Nav.Item>*/}
                                     </Nav>
                                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp": ""}>
                                         <Tab.Pane eventKey="first">
@@ -61,20 +65,23 @@ export const Projects = () => {
                                                     projects.map((project, index) => {
                                                         return (
                                                             <ProjectCard
-                                                                key={index}
-                                                                {...project}
+                                                            key={index}
+                                                            title={project.title}
+                                                            description={project.description}
+                                                            imgUrl={project.imgUrl}
+                                                            //githubUrl={project.githubUrl}
                                                             />
                                                         )
                                                     })
                                                 }
                                             </Row>
                                         </Tab.Pane>
-                                        <Tab.Pane eventKey="second">
+                                        {/*<Tab.Pane eventKey="second">
                                             <p>Lorem Ipsum</p>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="third">
                                             <p>Lorem Ipsum</p>
-                                        </Tab.Pane>
+                                        </Tab.Pane>*/}
                                     </Tab.Content>
                                 </Tab.Container>
                             </div>}
