@@ -307,25 +307,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Skills CSS*/
 .skill{
-  padding: 100px;
-  margin: 100px;
-  border-radius: 100px;
+  padding: 10vw;
+  margin: 10vw;
+  border-radius: 10vw;
   position: relative;
   background: linear-gradient(to bottom, #676db3, #0d47a1);
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
+  -webkit-border-radius: 10vw;
+  -moz-border-radius: 10vw;
+  -ms-border-radius: 10vw;
+  -o-border-radius: 10vw;
 }
 .skill-bx{
   background-color: #151515;
-  border-radius: 64px;
+  border-radius: 15vw;
   text-align: center;
-  padding: 60px;
-  margin-top: -60px;
+  padding: 15vw;
+  margin-top: -15vw;
+  -webkit-border-radius: 15vw;
+  -moz-border-radius: 15vw;
+  -ms-border-radius: 15vw;
+  -o-border-radius: 15vw;
 }
 .skill h2{
-  font-size: 45px;
+  font-size: 5vw;
   font-weight: 700;
 }
 .skill p{
