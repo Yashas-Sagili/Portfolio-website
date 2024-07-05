@@ -13,8 +13,8 @@ app.listen(8000, () => console.log("Server Running"));
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
+        user: "yashassagili@gmail.com",
+        pass: "qiua ilmn jtxk xwxt"
     },
 });
 
@@ -27,7 +27,7 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (req, res) => {
-    const name = req.body.firstName + req.body.lastName;
+    const name = req.body.firstName + " " + req.body.lastName;
     const email = req.body.email;
     const message = req.body.message;
     const phone = req.body.phone;
